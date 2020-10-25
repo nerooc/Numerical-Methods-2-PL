@@ -1,4 +1,4 @@
-# `RRZ - metody niejawne: trapezów, nRK2. Iteracja Picarda i Newtona.`
+# `RRZ - metody niejawne. Iteracja Picarda i Newtona.`
 
 ## Tech stack
 - HTML
@@ -11,4 +11,4 @@ Stworzony z wykorzystaniem technologii web'owych i biblioteki JS służącej do 
 Poniżej wyniki uzyskane z projektu:
 
 
-![alt text]()
+![alt text](https://github.com/nerooc/Numerical-Methods-2-PL/blob/main/Lab%2002%20-%20RRZ%20-%20Picard%2C%20Newton%2C%20Nj%20RK2/Wykresy/results.png)
