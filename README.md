@@ -5,3 +5,4 @@ Zadania z zajęć laboratoryjnych z przedmiotu pt. "Inżynierskie Metody Numeryc
 | ------ | -------- |
 | 1 | [RRZ - metody jawne: Eulera, RK2, RK4](https://github.com/nerooc/Numerical-Methods-2-PL/tree/main/Lab%2001%20-%20RRZ%20-%20metoda%20Eulera%2C%20RK2%2C%20RK4)
 | 2 | [RRZ - metody niejawne: trapezów, nRK2. Iteracja Picarda i Newtona](https://github.com/nerooc/Numerical-Methods-2-PL/tree/main/Lab%2002%20-%20RRZ%20-%20Picard%2C%20Newton%2C%20Nj%20RK2)
+| 3 | [RRZ - kontrola kroku czasowego w problemach sztywnych](https://github.com/nerooc/Numerical-Methods-2-PL/tree/main/Lab%2003%20-%20RRZ%20-%20kontrola%20kroku%20czasowego)
