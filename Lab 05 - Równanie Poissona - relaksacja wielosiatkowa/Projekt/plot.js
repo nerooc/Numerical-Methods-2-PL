@@ -85,15 +85,15 @@ function poisson(k_min) {
 
         for (let i = 0; i <= n_x - k; i += k) {
             for (let j = 0; j <= n_y - k; j += k) {
-                V[i + k / 2][j + k / 2] = 0.25 * (V[i][j] + V[i + k][j] + V[i][j + k] + V[i + k][j + k]);
+                V[Math.ceil(i + k / 2)][Math.ceil(j + k / 2)] = 0.25 * (V[i][j] + V[i + k][j] + V[i][j + k] + V[i + k][j + k]);
                 if (i != n_x - k) 
-                    V[i + k][j + k / 2] = 0.5 * (V[i + k][j] + V[i + k][j + k]);
+                    V[i + k][Math.ceil(j + k / 2)] = 0.5 * (V[i + k][j] + V[i + k][j + k]);
                 if (j != n_y - k) 
-                    V[i + k / 2][j + k] = 0.5 * (V[i][j + k] + V[i + k][j + k]);
+                    V[Math.ceil(i + k / 2)][j + k] = 0.5 * (V[i][j + k] + V[i + k][j + k]);
                 if (j != 0) 
-                    V[i + k / 2][j] = 0.5 * (V[i][j] + V[i + k][j]);
+                    V[Math.ceil(i + k / 2)][j] = 0.5 * (V[i][j] + V[i + k][j]);
                 if (i != 0) 
-                    V[i][j + k / 2] = 0.5 * (V[i][j] + V[i][j + k]);
+                    V[i][Math.ceil(j + k / 2)] = 0.5 * (V[i][j] + V[i][j + k]);
                 }
             }
 
@@ -129,6 +129,8 @@ const results16 = poisson(16);
 const results8 = poisson(8);
 const results4 = poisson(4);
 const results2 = poisson(2);
+const results1 = poisson(1);
+
 
 ///////////////////////// RYSOWANIE WYKRESÓW //////////////////////////////////
 
@@ -243,6 +245,7 @@ plot_heat("k = 16", results16.mp_z, results16.mp_x, results16.mp_y, "plot1");
 plot_heat("k = 8", results8.mp_z, results8.mp_x, results8.mp_y, "plot2");
 plot_heat("k = 4", results4.mp_z, results4.mp_x, results4.mp_y, "plot3");
 plot_heat("k = 2", results2.mp_z, results2.mp_x, results2.mp_y, "plot4");
+plot_heat("k = 1", results1.mp_z, results1.mp_x, results1.mp_y, "plot6");
 
 
 ///////////// Rysowanie wykresu dla całki ///////////
